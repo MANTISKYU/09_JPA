@@ -12,25 +12,25 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-@Access(AccessType.PROPERTY) // 모든 필드에 대해서 필드 직접 접근 방식을 사용
+@Access(AccessType.FIELD) // 모든 필드에 대해서 필드 직접 접근 방식을 사용
 public class Member {
 
     @Id
     @Column(name = "member_no")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Access(AccessType.PROPERTY)
+    @Access(AccessType.FIELD)
     private int memberNo;
 
     @Column(name ="member_id")
-    @Access(AccessType.PROPERTY)
+    @Access(AccessType.FIELD)
     private String memberId;
 
     @Column(name ="member_pwd")
-    @Access(AccessType.PROPERTY)
+    @Access(AccessType.FIELD)
     private String memberPwd;
 
     @Column(name ="nickname")
-    @Access(AccessType.PROPERTY)
+    @Access(AccessType.FIELD)
     private String nickname;
 
 }
