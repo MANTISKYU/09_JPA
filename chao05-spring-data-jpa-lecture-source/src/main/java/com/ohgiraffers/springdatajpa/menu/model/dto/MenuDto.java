@@ -1,0 +1,30 @@
+package com.ohgiraffers.springdatajpa.menu.model.dto;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.*;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+public class MenuDto {
+
+
+    private int menuCode;
+
+
+    private String menuName;
+
+
+    private int menuPrice;
+
+
+    private Integer categoryCode;
+
+    private String orderableStatus;
+
+}
