@@ -8,8 +8,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-@Setter
 @ToString
+@Setter
+//@Builder(toBuilder = true)
 public class Menu {
 
     @Id
@@ -17,16 +18,15 @@ public class Menu {
     @Column(name="menu_code")
     private int menuCode;
 
-    @Column(name="menu_name")
+    @Column(name = "menu_name")
     private String menuName;
 
-    @Column(name="menu_price")
+    @Column(name = "menu_price")
     private int menuPrice;
 
-    @Column(name="category_code")
-    private Integer categoryCode;
+    @Column(name = "category_code")
+    private int categoryCode;
 
-    @Column(name="orderable_status")
+    @Column(name = "orderable_status")
     private String orderableStatus;
-
 }

@@ -1,6 +1,5 @@
 package com.ohgiraffers.springdatajpa.menu.model.dto;
 
-import jakarta.persistence.Column;
 import lombok.*;
 
 
@@ -18,5 +17,5 @@ public class CategoryDto {
     private String categoryName;
 
 
-    private int refCategoryCode;
+    private Integer refCategoryCode;
 }
